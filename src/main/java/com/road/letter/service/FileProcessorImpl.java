@@ -118,7 +118,7 @@ public class FileProcessorImpl implements FileProcessor {
             case Cell.CELL_TYPE_STRING:
                 return cell.getStringCellValue();
             case Cell.CELL_TYPE_NUMERIC:
-                return cell.getNumericCellValue() + "";
+                return (int)cell.getNumericCellValue() + "";
             case Cell.CELL_TYPE_BOOLEAN:
                 return cell.getBooleanCellValue() + "";
             default:
